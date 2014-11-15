@@ -11,7 +11,12 @@ public class Round {
 	public static void main(String[] args) {
 		if (0 == args.length) usage();
 		
-		// TODO enter program here
+		// capture argument from command line as a variable,
+		// of reference type String, named sValue
+		String sValue = args[0];
+		
+		// call Log.info method to print the value
+		Log.info(sValue);
 	}
 
 	/**
