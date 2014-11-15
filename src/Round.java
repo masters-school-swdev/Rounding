@@ -15,8 +15,13 @@ public class Round {
 		// of reference type String, named sValue
 		String sValue = args[0];
 		
+		// because Java is a strongly typed language in order
+		// to convert one type to another (a String to a float)
+		// we must `cast` the value to the new type
+		float asFloat = Float.parseFloat( sValue );
+		
 		// call Log.info method to print the value
-		Log.info(sValue);
+		Log.info("%.1f", asFloat);
 	}
 
 	/**
