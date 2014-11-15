@@ -20,8 +20,10 @@ public class Round {
 		// we must `cast` the value to the new type
 		float asFloat = Float.parseFloat( sValue );
 		
+		int asInt = (int) asFloat;
+		
 		// call Log.info method to print the value
-		Log.info("%.1f", asFloat);
+		Log.info("%d", asInt);
 	}
 
 	/**
